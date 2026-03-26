@@ -10,6 +10,46 @@ representative of a real-world Tier 1 Help Desk environment.
 - Microsoft Entra ID (Azure Active Directory)
 - Microsoft Authenticator App
 - Azure Portal (GUI)
+- Canvas LMS
+
+## 📚 Canvas LMS Experience (Course Delivery & Workflow)
+
+This lab was completed through the Canvas Learning Management System (LMS), demonstrating hands-on experience with a platform commonly used in education, healthcare, and enterprise training environments.
+
+### Key Canvas Skills Demonstrated:
+- Navigated structured course modules and learning paths
+- Accessed and completed assignments and quizzes within Canvas
+- Submitted coursework and reviewed feedback
+- Managed progress across multiple modules and tasks
+- Interacted with course content in a structured training environment
+
+### Canvas Interface & Workflow Evidence:
+
+📸 **Modules Overview**
+- Demonstrates ability to navigate course structure and locate content  
+![Canvas Modules](canvas-screenshots/canvas-modules.png)
+
+📸 **Module Content View**
+- Shows interaction with course materials and structured lessons  
+![Module Content](canvas-screenshots/canvas-module-content.png)
+
+📸 **Assignment / Quiz Interaction**
+- Demonstrates accessing and working through assigned tasks  
+![Assignment View](canvas-screenshots/canvas-quiz-open.png)
+
+📸 **Submission & Response**
+- Shows completion of coursework and interaction with assignment workflow  
+![Submission](canvas-screenshots/canvas-submission.png)
+
+📸 **Grades / Feedback**
+- Demonstrates full workflow from assignment to evaluation  
+![Grades](canvas-screenshots/canvas-grades.png)
+
+### Real-World Relevance:
+Canvas is widely used in universities, healthcare systems, and corporate training environments. This experience demonstrates the ability to:
+- Work within enterprise LMS platforms
+- Follow structured onboarding and training systems
+- Navigate digital environments used by staff, students, and employees
 
 ## Real-World Relevance
 Nearly every modern organization uses Microsoft Entra ID as their cloud identity 
