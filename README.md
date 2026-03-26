@@ -1,15 +1,22 @@
-# Microsoft Entra ID – Identity & Access Management Lab
+# Microsoft Entra ID (Azure AD) Help Desk Lab
 
 ## Objective
-Simulate a cloud identity management environment using Microsoft Entra ID to perform 
-common user administration, MFA enforcement, and sign-in log analysis tasks 
-representative of a real-world Tier 1 Help Desk environment.
+> This project demonstrates hands-on experience performing common Tier 1 IT support tasks in identity and access management within a cloud-based environment.
+>
+> Tasks were completed in Microsoft Entra ID using real-world workflows, including user provisioning, password resets, MFA setup, role-based access control (RBAC), and sign-in troubleshooting. Lab execution was completed through the Canvas Learning Management System (LMS), simulating structured enterprise training and onboarding environments.
+
+## Key Skills Demonstrated
+- User account provisioning and onboarding
+- Password reset and account recovery
+- Multi-Factor Authentication (MFA) setup and support
+- Role-Based Access Control (RBAC) and least privilege
+- Sign-in log analysis and troubleshooting
+- Canvas LMS navigation and workflow management
 
 ## Tools & Technologies Used
-- Microsoft Azure (Free Student Subscription)
 - Microsoft Entra ID (Azure Active Directory)
+- Microsoft Azure Portal (GUI)
 - Microsoft Authenticator App
-- Azure Portal (GUI)
 - Canvas LMS
 
 ## 📚 Canvas LMS Experience (Course Delivery & Workflow)
