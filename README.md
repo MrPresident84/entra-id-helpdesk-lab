@@ -1,67 +1,30 @@
 # Microsoft Entra ID (Azure AD) Help Desk Lab
 
 ## Objective
+
 > This project demonstrates hands-on experience performing common Tier 1 IT support tasks in identity and access management within a cloud-based environment.
 >
-> Tasks were completed in Microsoft Entra ID using real-world workflows, including user provisioning, password resets, MFA setup, role-based access control (RBAC), and sign-in troubleshooting. Lab execution was completed through the Canvas Learning Management System (LMS), simulating structured enterprise training and onboarding environments.
+> Tasks were completed in Microsoft Entra ID using real-world workflows, including user provisioning, password resets, MFA setup, role-based access control (RBAC), and sign-in troubleshooting.
 
 ## Key Skills Demonstrated
+
 - User account provisioning and onboarding
 - Password reset and account recovery
 - Multi-Factor Authentication (MFA) setup and support
 - Role-Based Access Control (RBAC) and least privilege
 - Sign-in log analysis and troubleshooting
-- Canvas LMS navigation and workflow management
 
 ## Tools & Technologies Used
+
 - Microsoft Entra ID (Azure Active Directory)
 - Microsoft Azure Portal (GUI)
 - Microsoft Authenticator App
-- Canvas LMS
-
-## 📚 Canvas LMS Experience (Course Delivery & Workflow)
-
-This lab was completed through the Canvas Learning Management System (LMS), demonstrating hands-on experience with a platform commonly used in education, healthcare, and enterprise training environments.
-
-### Key Canvas Skills Demonstrated:
-- Navigated structured course modules and learning paths
-- Accessed and completed assignments and quizzes within Canvas
-- Submitted coursework and reviewed feedback
-- Managed progress across multiple modules and tasks
-- Interacted with course content in a structured training environment
-
-### Canvas Interface & Workflow Evidence:
-
-📸 **Modules Overview**
-- Demonstrates ability to navigate course structure and locate content  
-![Canvas Modules](canvas-screenshots/canvas-modules.png)
-
-📸 **Module Content View**
-- Shows interaction with course materials and structured lessons  
-![Module Content](canvas-screenshots/canvas-module-content.png)
-
-📸 **Assignment / Quiz Interaction**
-- Demonstrates accessing and working through assigned tasks  
-![Assignment View](canvas-screenshots/canvas-quiz-open.png)
-
-📸 **Submission & Response**
-- Shows completion of coursework and interaction with assignment workflow  
-![Submission](canvas-screenshots/canvas-submission.png)
-
-📸 **Grades / Feedback**
-- Demonstrates full workflow from assignment to evaluation  
-![Grades](canvas-screenshots/canvas-grades.png)
-
-### Real-World Relevance:
-Canvas is widely used in universities, healthcare systems, and corporate training environments. This experience demonstrates the ability to:
-- Work within enterprise LMS platforms
-- Follow structured onboarding and training systems
-- Navigate digital environments used by staff, students, and employees
 
 ## Real-World Relevance
-Nearly every modern organization uses Microsoft Entra ID as their cloud identity 
-provider. Tier 1 Help Desk technicians regularly perform user account management, 
-assist users with MFA setup, and read sign-in logs to troubleshoot authentication 
+
+Nearly every modern organization uses Microsoft Entra ID as their cloud identity
+provider. Tier 1 Help Desk technicians regularly perform user account management,
+assist users with MFA setup, and read sign-in logs to troubleshoot authentication
 issues. This lab demonstrates hands-on proficiency with these core responsibilities.
 
 ---
@@ -69,20 +32,24 @@ issues. This lab demonstrates hands-on proficiency with these core responsibilit
 ## Part 1 — User Creation
 
 ### Objective
+
 Create a new cloud user in Entra ID simulating the onboarding of a new employee.
 
 ### Steps Performed
+
 - Navigated to Microsoft Entra ID → Users → New User
 - Created user John Smith (jsmith@domain.onmicrosoft.com)
 - Assigned job title and department to simulate a realistic employee profile
 - Auto-generated temporary password and documented credentials securely
 
 ### Screenshot
-![User Created](screenshots/01-user-created.png)
+
+![User Created](https://github.com/MrPresident84/entra-id-helpdesk-lab/raw/main/screenshots/01-user-created.png)
 
 ### Real-World Relevance
-User creation is one of the most common Tier 1 tasks. When a new employee joins 
-an organization, the help desk is responsible for provisioning their account in 
+
+User creation is one of the most common Tier 1 tasks. When a new employee joins
+an organization, the help desk is responsible for provisioning their account in
 Entra ID or Active Directory before they can access any company resources.
 
 ---
@@ -90,19 +57,23 @@ Entra ID or Active Directory before they can access any company resources.
 ## Part 2 — Role Assignment (RBAC)
 
 ### Objective
+
 Assign a role to the new user demonstrating Role Based Access Control (RBAC).
 
 ### Steps Performed
+
 - Navigated to John Smith's user profile
 - Assigned the Helpdesk Administrator role via Assigned Roles
 - Verified role appeared under the user's profile
 
 ### Screenshot
-![Role Assigned](screenshots/02-role-assigned.png)
+
+![Role Assigned](https://github.com/MrPresident84/entra-id-helpdesk-lab/raw/main/screenshots/02-role-assigned.png)
 
 ### Real-World Relevance
-RBAC ensures users only have the permissions they need — a core principle of 
-least privilege access. In a real environment, assigning incorrect roles is a 
+
+RBAC ensures users only have the permissions they need — a core principle of
+least privilege access. In a real environment, assigning incorrect roles is a
 common issue Tier 1 techs troubleshoot when users report missing permissions.
 
 ---
@@ -110,29 +81,34 @@ common issue Tier 1 techs troubleshoot when users report missing permissions.
 ## Part 3 — MFA Enforcement via Security Defaults
 
 ### Objective
+
 Demonstrate MFA enforcement using Microsoft's baseline Security Defaults policy.
 
 ### What Are Security Defaults?
-Security Defaults is Microsoft's built-in baseline Conditional Access policy 
-available on all Entra ID tenants at no cost. It enforces MFA for all users 
-via the Microsoft Authenticator app and blocks legacy authentication protocols. 
-It functions as a Conditional Access policy under the hood, as evidenced by 
+
+Security Defaults is Microsoft's built-in baseline Conditional Access policy
+available on all Entra ID tenants at no cost. It enforces MFA for all users
+via the Microsoft Authenticator app and blocks legacy authentication protocols.
+It functions as a Conditional Access policy under the hood, as evidenced by
 the sign-in logs shown in Part 5.
 
 ### Steps Performed
-- Confirmed Security Defaults were enabled under Entra ID → Properties → 
+
+- Confirmed Security Defaults were enabled under Entra ID → Properties →
   Manage Security Defaults
 - Signed in as John Smith in an incognito browser window via myapps.microsoft.com
 - Was immediately prompted to register MFA via Microsoft Authenticator
 - Completed MFA registration on mobile device
 
 ### Screenshots
-![Security Defaults Enabled](screenshots/03-security-defaults-enabled.png)
-![MFA Registration Prompt](screenshots/04-mfa-registration-prompt.png)
+
+![Security Defaults Enabled](https://github.com/MrPresident84/entra-id-helpdesk-lab/raw/main/screenshots/03-security-defaults-enabled.png)
+![MFA Registration Prompt](https://github.com/MrPresident84/entra-id-helpdesk-lab/raw/main/screenshots/04-mfa-registration-prompt.png)
 
 ### Real-World Relevance
-MFA setup assistance is one of the highest volume Tier 1 tickets in any 
-organization. Understanding how Security Defaults enforces MFA and walking 
+
+MFA setup assistance is one of the highest volume Tier 1 tickets in any
+organization. Understanding how Security Defaults enforces MFA and walking
 a user through the registration process is a daily help desk responsibility.
 
 ---
@@ -140,20 +116,24 @@ a user through the registration process is a daily help desk responsibility.
 ## Part 4 — Password Reset
 
 ### Objective
+
 Demonstrate the password reset process for a user account.
 
 ### Steps Performed
+
 - Navigated to John Smith's user profile in Entra ID
 - Clicked Reset Password at the top of the profile
 - Azure generated a temporary password
 - Documented that the user would be prompted to create a new password on next login
 
 ### Screenshot
-![Password Reset](screenshots/11-password-reset.png)
+
+![Password Reset](https://github.com/MrPresident84/entra-id-helpdesk-lab/raw/main/screenshots/11-password-reset.png)
 
 ### Real-World Relevance
-Password resets are the single most common Tier 1 help desk ticket in most 
-organizations. This demonstrates the cloud equivalent of the same task performed 
+
+Password resets are the single most common Tier 1 help desk ticket in most
+organizations. This demonstrates the cloud equivalent of the same task performed
 in on-premises Active Directory.
 
 ---
@@ -161,10 +141,12 @@ in on-premises Active Directory.
 ## Part 5 — Sign-In Log Analysis
 
 ### Objective
-Read and interpret Entra ID sign-in logs to understand authentication events 
+
+Read and interpret Entra ID sign-in logs to understand authentication events
 and troubleshoot access issues — a core Tier 1 troubleshooting skill.
 
 ### Steps Performed
+
 - Navigated to Entra ID → Monitoring → Sign-in Logs
 - Located John Smith's sign-in entries
 - Analyzed both an interrupted and a successful sign-in entry
@@ -174,59 +156,61 @@ and troubleshoot access issues — a core Tier 1 troubleshooting skill.
 
 ### 5a — Interrupted Sign-In
 
-An interrupted status means the sign-in was initiated but not completed. 
-In this case MFA registration had not yet been finished, causing Entra ID 
+An interrupted status means the sign-in was initiated but not completed.
+In this case MFA registration had not yet been finished, causing Entra ID
 to intercept the login and halt the process until MFA was satisfied.
 
-![Sign-In Log Interrupted](screenshots/06-signin-log-interrupted.png)
+![Sign-In Log Interrupted](https://github.com/MrPresident84/entra-id-helpdesk-lab/raw/main/screenshots/06-signin-log-interrupted.png)
 
 ---
 
 ### 5b — Successful Sign-In
 
-After completing MFA registration, John Smith's subsequent login shows 
+After completing MFA registration, John Smith's subsequent login shows
 a Success status confirming full authentication was achieved.
 
-![Sign-In Log Success](screenshots/07-signin-log-success.png)
+![Sign-In Log Success](https://github.com/MrPresident84/entra-id-helpdesk-lab/raw/main/screenshots/07-signin-log-success.png)
 
 ---
 
 ### 5c — Conditional Access & Grant Controls
 
-The Conditional Access tab confirms that Security Defaults applied its 
-baseline MFA policy to this sign-in. The Grant Controls section shows 
-that MFA was the enforced requirement and access was only granted after 
-the MFA condition was satisfied. This demonstrates that even without a 
-paid Entra ID P1 license, Conditional Access policies are actively 
+The Conditional Access tab confirms that Security Defaults applied its
+baseline MFA policy to this sign-in. The Grant Controls section shows
+that MFA was the enforced requirement and access was only granted after
+the MFA condition was satisfied. This demonstrates that even without a
+paid Entra ID P1 license, Conditional Access policies are actively
 enforced and visible in the logs.
 
-![Conditional Access and Grant Controls](screenshots/08-conditional-access-tab.png)
+![Conditional Access and Grant Controls](https://github.com/MrPresident84/entra-id-helpdesk-lab/raw/main/screenshots/08-conditional-access-tab.png)
 
 ---
 
 ### 5d — Authentication Details Tab
 
-The Authentication Details tab shows the full step-by-step authentication 
+The Authentication Details tab shows the full step-by-step authentication
 chain including:
+
 - Authentication method used
 - Whether MFA was freshly completed or previously satisfied via session token
 - Final result: Succeeded — True
 
-"Previously satisfied" indicates the MFA claim was carried over from a 
-prior authenticated session token, which is normal behavior in Microsoft's 
-authentication flow. This prevents unnecessary repeated MFA prompts for 
+"Previously satisfied" indicates the MFA claim was carried over from a
+prior authenticated session token, which is normal behavior in Microsoft's
+authentication flow. This prevents unnecessary repeated MFA prompts for
 users who have already verified their identity in the same session.
 
-![Authentication Details](screenshots/10-authentication-details-tab.png)
+![Authentication Details](https://github.com/MrPresident84/entra-id-helpdesk-lab/raw/main/screenshots/10-authentication-details-tab.png)
 
 ---
 
 ### Real-World Relevance
-Reading sign-in logs is one of the most important Tier 1 troubleshooting 
-skills. When a user reports they cannot log in, a Tier 1 tech navigates 
-to sign-in logs to identify whether the failure was due to a wrong password, 
-MFA issue, Conditional Access policy block, or account status problem. 
-Understanding the difference between interrupted, failed, and success 
+
+Reading sign-in logs is one of the most important Tier 1 troubleshooting
+skills. When a user reports they cannot log in, a Tier 1 tech navigates
+to sign-in logs to identify whether the failure was due to a wrong password,
+MFA issue, Conditional Access policy block, or account status problem.
+Understanding the difference between interrupted, failed, and success
 statuses allows for faster and more accurate ticket resolution and escalation.
 
 ---
@@ -234,7 +218,7 @@ statuses allows for faster and more accurate ticket resolution and escalation.
 ## Summary of Skills Demonstrated
 
 | Skill | Tool Used |
-|---|---|
+| --- | --- |
 | Cloud user provisioning | Microsoft Entra ID |
 | Role Based Access Control (RBAC) | Microsoft Entra ID |
 | MFA enforcement and registration | Security Defaults / Authenticator |
@@ -246,8 +230,9 @@ statuses allows for faster and more accurate ticket resolution and escalation.
 ---
 
 ## Notes
-This lab was performed using a Microsoft Azure Student subscription. 
-Entra ID P1 features such as custom Conditional Access policies were not 
-available under this subscription tier. Security Defaults was used as the 
-baseline MFA and Conditional Access equivalent, which is consistent with 
+
+This lab was performed using a Microsoft Azure Student subscription.
+Entra ID P1 features such as custom Conditional Access policies were not
+available under this subscription tier. Security Defaults was used as the
+baseline MFA and Conditional Access equivalent, which is consistent with
 how many small to mid-size organizations configure their Microsoft tenants.
